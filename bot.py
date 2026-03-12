@@ -45,8 +45,4 @@ def executar():
     driver.quit()
 
 
-schedule.every().day.at("18:00").do(executar)
-
-while True:
-    schedule.run_pending()
-    time.sleep(60)
+executar()
